@@ -38,10 +38,10 @@ position: fixed;
 top: 0;
 left: 0;
 width: 100%;
-padding: 2rem 9%;
+padding: 2rem 8%;
 background: var(--bg-color);
 display: flex;
-justify-content: space-between;
+justify-content:space-evenly;
 align-items: center;
 z-index: 100;
 }
@@ -56,9 +56,9 @@ z-index: 100;
     cursor: default;
 }
 .navbar a {
-font-size: 1.7rem;
+font-size: 1.5rem;
 color:var(--text-color);
-margin-left: 4rem;
+margin-left: 1rem;
 transition: .3s;
 }
 .navbar a:hover,
@@ -84,8 +84,8 @@ color: var(--text-color);
     
 }
 .home-content h3 {
-    font-size: 2.9rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 400;
     
 }
 .home-content h3:nth-of-type(2) 
