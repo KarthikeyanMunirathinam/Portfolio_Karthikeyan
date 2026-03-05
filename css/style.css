@@ -388,7 +388,7 @@ transition: .5s ease;
         width: 20vw;
            }
     .IoT-layer{
-        margin-top: .5rem;
+        margin-top: 0.5rem;
         text-align: center;
         font-size: 2rem;
         color: var(--main-color); 
@@ -471,7 +471,7 @@ transition: .5s ease;
         gap: 2rem;
     }
     .realtime-container .ABTENGIoT-box{
-        margin-top: 0.5rem;
+        margin-top: 0.1rem;
         position: relative;
         border-radius: 0.5rem;
         box-shadow: 0 0 1rem var(--text-color);
