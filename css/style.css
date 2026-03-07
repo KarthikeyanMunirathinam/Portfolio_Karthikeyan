@@ -69,6 +69,7 @@ transition: .3s;
 {
 font-size: 3.6rem;
 color: var(--text-color);
+
 }
 .index
 {
@@ -550,7 +551,13 @@ transition: .5s ease;
         color: var(--second-bg-color);
     }
 
-    @media(max-width:991px){
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+   @media(max-width:991px){
         .header {
             padding: 2rem 3%;
         }
@@ -576,6 +583,7 @@ transition: .5s ease;
             border-top: .1rem solid rgba(0,0,0,2);
             box-shadow: 0, .5rem 1 rem rgba(0,0,0,.2);
             display: none;
+           
         }
 
         .navbar .active {
