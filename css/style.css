@@ -12,11 +12,11 @@
 }
 :root
 {
-    --bg-color: #05598a;
+    --bg-color: #024b75;
     --second-bg-color: #f1f4fc;
     --text-color: #ffffff;
     --main-color: hsl(29, 90%, 45%);
-    --thrid-color:#fff021;
+    --thrid-color:#fcfa85;
     --head-color:#076794;
        }
 html
@@ -63,7 +63,8 @@ transition: .3s;
 }
 .navbar a:hover,
 .navbar a.active {
-  color: var(--main-color);
+    background: var(--main-color);
+  color: var(--text-color);
 }
 #menu-icon
 {
@@ -129,7 +130,7 @@ transition: .5s ease;
 .social-media a:hover
 {
     background: var(--main-color);
-    color: var(--second-bg-color);
+    color: var(--thrid-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
  .btn 
@@ -138,7 +139,7 @@ transition: .5s ease;
     padding: 0.5rem 1.4rem;
     background: var(--bg-color);
     border-radius: 7rem;
-    box-shadow: 0 0 1rem var(--text-color);
+    box-shadow: 0 0 0.5rem var(--text-color);
     font-size: 1.6rem;
     color: var(--text-color);
     letter-spacing: .1rem;
@@ -148,7 +149,21 @@ transition: .5s ease;
  .btn:hover
  {
     box-shadow: none;
+     }
+ .CV a{
+     display: inline-block;
+    padding: 0.5rem 1.4rem;
+    background: var(--main-color);
+    border-radius: 7rem;
+    box-shadow: 0 0 1rem var(--text-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
  }
+  
+ 
  .about 
  {
    display: flex;
@@ -183,11 +198,13 @@ transition: .5s ease;
  }
  .about-content h1 {
    color: var(--main-color);
+   margin-top: 1rem;
+   margin-bottom: 0.1rem;
  }
 
  .about-content p {
     font-size: 1.6rem;
-    margin: 0.3rem 0 0.3rem;
+    margin: 0.05rem 0 0.05rem;
  }
 
 
@@ -203,10 +220,11 @@ transition: .5s ease;
  .academic h3{
     font-size: 2.6rem;
     color: var(--main-color);
+    margin-top: 3rem;
  }
  
  .education h2 {
-    margin-top: 4rem;
+    margin-top: 3rem;
     color: var(--bg-color);
  }
 
@@ -335,7 +353,7 @@ transition: .5s ease;
         margin-top: 0.5rem;
         position: relative;
         border-radius: 0.5rem;
-        box-shadow: 0 0 1rem var(--bg-color);
+        box-shadow: 0 0 0.5rem var(--main-color);
         overflow: hidden;
         display: flex;
         height: 37vh;
@@ -344,7 +362,7 @@ transition: .5s ease;
         margin-top: .5rem;
         text-align: center;
         font-size: 2rem;
-        color: var(--main-color);               
+        color: var(--bg-color);               
     }
 
 
@@ -382,7 +400,7 @@ transition: .5s ease;
         margin-top: 0.5rem;
         position: relative;
         border-radius: 0.5rem;
-        box-shadow: 0 0 1rem var(--bg-color);
+        box-shadow: 0 0 0.5rem var(--main-color);
         overflow: hidden;
         display: flex;
         height: 45vh;
@@ -392,7 +410,7 @@ transition: .5s ease;
         margin-top: 0.5rem;
         text-align: center;
         font-size: 2rem;
-        color: var(--main-color); 
+        color: var(--bg-color); 
     }
     .IoT-container1 {
         display: grid;
@@ -405,7 +423,7 @@ transition: .5s ease;
         margin-top: 0.5rem;
         position: relative;
         border-radius: 0.5rem;
-        box-shadow: 0 0 1rem var(--bg-color);
+        box-shadow: 0 0 1rem var(--main-color);
         overflow: hidden;
         display: flex;
         height: 45vh;
@@ -415,7 +433,7 @@ transition: .5s ease;
         margin-top: 4rem;
         text-align: center;
         font-size: 2rem;
-        color: var(--main-color); 
+        color: var(--bg-color); 
     }
     .ivdrips-img img {
     width: 41vw;
@@ -426,6 +444,40 @@ transition: .5s ease;
     height: 45vh;
     }
 
+    .sensor-content h3 {
+        margin-top: 6rem;
+     font-size: 2rem;
+     }
+    .sensor-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 18rem;
+    }
+    .sensor-container .sensor-box{
+        margin-top: 0.5rem;
+        position: relative;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 1rem var(--main-color);
+        overflow: hidden;
+        display: flex;
+        height: 45vh;
+        width: 36vw;
+           }
+    .sensor-layer{
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: 2rem;
+        color: var(--bg-color); 
+    }
+       .Schematic-img img {
+    width: 36vw;
+    height: 45vh;
+    }
+    .Fabrication-img img {
+    width: 36vw;
+    height: 45vh;
+    }
 
 
 
@@ -508,7 +560,7 @@ transition: .5s ease;
     color: var(--text-color);
     letter-spacing: .4rem;
     font-weight: 400;
-    transition: .5s ease;
+    transition: .3s ease;
     }
     .publications-content p {
      margin-top: 0.5rem;
@@ -518,7 +570,9 @@ transition: .5s ease;
     }
     .publications a:hover
 {
-   box-shadow: 0 0 0.5rem var(--main-color);
+   box-shadow: 0 0 0.5rem var(--text-color);
+   background: var(--main-color);
+   color: var(--text-color);
 
 }
 
